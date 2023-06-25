@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #002f4b,
+            #dc4225);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.kartica {
+    width: 90%;
+    height: 600px;
+    max-width: 470px;
+    background: rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 5px solid rgba(255, 255, 255, 0.175);
+    color: #fff;
+    margin: 70px auto 0;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.meni {
+    margin: auto;
+    position: relative;
+    width: 180px;
+    margin-top: 30px;
+    margin-bottom: -50px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.meni ul li {
+    display: inline-block;
+    list-style: none;
+    width: 50px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    border: 1px dashed rgba(255, 255, 255, 0);
+    color: #fff;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meni ul .friends:hover {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 50px 0 0 50px;
+}
+
+.meni ul .home:hover {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 0 50px 50px 0px;
+}
+
+.meni ul {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    position: absolute;
+    padding: 0;
+    z-index: 100;
+}
+
+.plus {
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #002f4b,
+            #dc4225);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 2rem;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    bottom: -450px;
+}
+
+.plus:hover {
+    background: #fff;
+    border: 2px solid #685e5c;
+    color: #685e5c;
+    cursor: pointer;
+}
+
+/* telefon */
+@media screen and (max-width: 600px) {
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .plus {
+        bottom: -470px;
+    }
+
+    .search input {
+        font-size: 12px;
+        height: 40px;
+    }
+}
